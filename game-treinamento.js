@@ -2,7 +2,7 @@
 
 var p; // shortcut to reference prototypes
 lib.ssMetadata = [
-		{name:"game_treinamento_atlas_", frames: [[1963,3912,400,226],[3732,3380,327,119],[1467,3912,494,481],[3339,3591,300,193],[4061,3447,101,3],[1467,3380,943,530],[2412,3380,925,536],[3732,3568,84,64],[3732,3501,480,65],[4061,3380,480,65],[3339,3380,391,209],[3339,3786,523,88],[0,3380,1465,3233],[0,0,6894,3378]]}
+		{name:"game_treinamento_atlas_", frames: [[6164,4194,400,226],[6439,3786,327,119],[5668,4194,494,481],[6439,3591,300,193],[4734,4689,101,3],[1467,4599,943,530],[1467,5131,925,536],[4777,4599,84,64],[4252,4689,480,65],[6741,3591,480,65],[6439,3380,391,209],[4252,4599,523,88],[4951,4194,715,591],[2761,3380,1180,1216],[0,3380,1465,3233],[4951,3380,1486,812],[0,0,6894,3378],[2761,4598,762,722],[3943,3380,1006,1217],[5223,4787,969,266],[4252,4787,969,267],[3525,4599,725,409],[1467,3380,1292,1217]]}
 ];
 
 
@@ -94,16 +94,79 @@ lib.ssMetadata = [
 
 
 
-(lib.CanelinhaSemVestes = function() {
+(lib.CalçaIntervel = function() {
 	this.spriteSheet = ss["game_treinamento_atlas_"];
 	this.gotoAndStop(12);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.Cenário = function() {
+(lib.CamisetaIntervel = function() {
 	this.spriteSheet = ss["game_treinamento_atlas_"];
 	this.gotoAndStop(13);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.CanelinhaSemVestes = function() {
+	this.spriteSheet = ss["game_treinamento_atlas_"];
+	this.gotoAndStop(14);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.CapaceteIntervel = function() {
+	this.spriteSheet = ss["game_treinamento_atlas_"];
+	this.gotoAndStop(15);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.Cenário = function() {
+	this.spriteSheet = ss["game_treinamento_atlas_"];
+	this.gotoAndStop(16);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.Luvas = function() {
+	this.spriteSheet = ss["game_treinamento_atlas_"];
+	this.gotoAndStop(17);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.Regata = function() {
+	this.spriteSheet = ss["game_treinamento_atlas_"];
+	this.gotoAndStop(18);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.Sapato4 = function() {
+	this.spriteSheet = ss["game_treinamento_atlas_"];
+	this.gotoAndStop(19);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.SapatoSocial = function() {
+	this.spriteSheet = ss["game_treinamento_atlas_"];
+	this.gotoAndStop(20);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.Shorts = function() {
+	this.spriteSheet = ss["game_treinamento_atlas_"];
+	this.gotoAndStop(21);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.Social = function() {
+	this.spriteSheet = ss["game_treinamento_atlas_"];
+	this.gotoAndStop(22);
 }).prototype = p = new cjs.Sprite();
 // helper functions:
 
@@ -189,6 +252,25 @@ function getMCSymbolPrototype(symbol, nominalBounds, frameBounds) {
 
 }).prototype = p = new cjs.MovieClip();
 p.nominalBounds = new cjs.Rectangle(0,0,84,64);
+
+
+(lib.cen = function(mode,startPosition,loop) {
+	this.initialize(mode,startPosition,loop,{});
+
+	// Layer 2
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f("rgba(255,116,163,0.678)").s().p("Ehj/A4QMAAAhwfMDH/AAAMAAABwfg");
+
+	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1));
+
+	// Layer 1
+	this.instance = new lib.Cenário();
+	this.instance.parent = this;
+	this.instance.setTransform(640,-360,0.155,0.213,0,0,180);
+
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
+
+}).prototype = getMCSymbolPrototype(lib.cen, new cjs.Rectangle(-640,-360,1280,720), null);
 
 
 (lib.fechar = function(mode,startPosition,loop) {
@@ -307,48 +389,92 @@ p.nominalBounds = new cjs.Rectangle(-31,-40.2,637.4,160.5);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.instance_2}]},9).to({state:[{t:this.instance_3}]},5).wait(2));
 
-	// conteudo
-	this.instance_4 = new lib.titulo();
+	// aviso
+	this.aviso_mc = new lib.aviso1();
+	this.aviso_mc.parent = this;
+	this.aviso_mc.setTransform(653.7,294.5,1,1,0,0,0,251.5,44);
+	this.aviso_mc._off = true;
+
+	this.timeline.addTween(cjs.Tween.get(this.aviso_mc).wait(15).to({_off:false},0).wait(1));
+
+	// extra
+	this.instance_4 = new lib.Regata();
 	this.instance_4.parent = this;
-	this.instance_4.setTransform(1033,479.5,1,1,0,0,0,247,240.5);
+	this.instance_4.setTransform(783,136,0.117,0.117);
+
+	this.instance_5 = new lib.Social();
+	this.instance_5.parent = this;
+	this.instance_5.setTransform(529,113,0.122,0.122);
+
+	this.instance_6 = new lib.Shorts();
+	this.instance_6.parent = this;
+	this.instance_6.setTransform(638,328,0.251,0.251);
+
+	this.instance_7 = new lib.CapaceteIntervel();
+	this.instance_7.parent = this;
+	this.instance_7.setTransform(983,216,0.096,0.096);
+
+	this.instance_8 = new lib.Sapato4();
+	this.instance_8.parent = this;
+	this.instance_8.setTransform(774,472,0.178,0.178);
+
+	this.instance_9 = new lib.CamisetaIntervel();
+	this.instance_9.parent = this;
+	this.instance_9.setTransform(1006,352,0.146,0.146);
+
+	this.instance_10 = new lib.SapatoSocial();
+	this.instance_10.parent = this;
+	this.instance_10.setTransform(683,589,0.204,0.204);
+
+	this.instance_11 = new lib.CalçaIntervel();
+	this.instance_11.parent = this;
+	this.instance_11.setTransform(460,463,0.213,0.213);
+
+	this.instance_12 = new lib.Luvas();
+	this.instance_12.parent = this;
+	this.instance_12.setTransform(401,279,0.169,0.169);
+
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.instance_12},{t:this.instance_11},{t:this.instance_10},{t:this.instance_9},{t:this.instance_8},{t:this.instance_7},{t:this.instance_6},{t:this.instance_5},{t:this.instance_4}]},15).wait(1));
+
+	// conteudo
+	this.instance_13 = new lib.titulo();
+	this.instance_13.parent = this;
+	this.instance_13.setTransform(1033,479.5,1,1,0,0,0,247,240.5);
 
 	this.go_btn = new lib.go();
 	this.go_btn.parent = this;
 	this.go_btn.setTransform(640,621,1,1,0,0,0,42,32);
 	new cjs.ButtonHelper(this.go_btn, 0, 1, 1);
 
-	this.instance_5 = new lib.Bitmap46();
-	this.instance_5.parent = this;
-	this.instance_5.setTransform(178,142);
+	this.instance_14 = new lib.Bitmap46();
+	this.instance_14.parent = this;
+	this.instance_14.setTransform(178,142);
 
-	this.instance_6 = new lib.Bitmap50();
-	this.instance_6.parent = this;
-	this.instance_6.setTransform(325,223);
+	this.instance_15 = new lib.Bitmap50();
+	this.instance_15.parent = this;
+	this.instance_15.setTransform(325,223);
 
-	this.instance_7 = new lib.CanelinhaSemVestes();
-	this.instance_7.parent = this;
-	this.instance_7.setTransform(147,223,0.132,0.132);
+	this.instance_16 = new lib.CanelinhaSemVestes();
+	this.instance_16.parent = this;
+	this.instance_16.setTransform(147,223,0.132,0.132);
 
-	this.aviso_mc = new lib.aviso1();
-	this.aviso_mc.parent = this;
-	this.aviso_mc.setTransform(858.7,209,1,1,0,0,0,261.5,44);
-
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_4}]}).to({state:[{t:this.instance_5},{t:this.go_btn,p:{x:640,y:621}}]},9).to({state:[{t:this.instance_7},{t:this.instance_6},{t:this.go_btn,p:{x:541.5,y:494.8}}]},5).to({state:[{t:this.instance_7},{t:this.aviso_mc}]},1).wait(1));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_13}]}).to({state:[{t:this.instance_14},{t:this.go_btn,p:{x:640,y:621}}]},9).to({state:[{t:this.instance_16},{t:this.instance_15},{t:this.go_btn,p:{x:541.5,y:494.8}}]},5).to({state:[{t:this.instance_16}]},1).wait(1));
 
 	// cenario
-	this.instance_8 = new lib.Bitmap38();
-	this.instance_8.parent = this;
-	this.instance_8.setTransform(0,-2,3.207,3.207);
+	this.instance_17 = new lib.Bitmap38();
+	this.instance_17.parent = this;
+	this.instance_17.setTransform(0,-2,3.207,3.207);
 
-	this.instance_9 = new lib.Bitmap45();
-	this.instance_9.parent = this;
-	this.instance_9.setTransform(0,0,1.357,1.358);
+	this.instance_18 = new lib.Bitmap45();
+	this.instance_18.parent = this;
+	this.instance_18.setTransform(0,0,1.357,1.358);
 
-	this.instance_10 = new lib.Cenário();
-	this.instance_10.parent = this;
-	this.instance_10.setTransform(1280,0,0.155,0.213,0,0,180);
+	this.instance_19 = new lib.cen();
+	this.instance_19.parent = this;
+	this.instance_19.setTransform(1280,720,1,1,0,0,0,640,360);
+	new cjs.ButtonHelper(this.instance_19, 0, 1, 1);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_8}]}).to({state:[{t:this.instance_9}]},9).to({state:[{t:this.instance_10}]},5).wait(2));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_17}]}).to({state:[{t:this.instance_18}]},9).to({state:[{t:this.instance_19}]},5).wait(2));
 
 }).prototype = p = new cjs.MovieClip();
 p.nominalBounds = new cjs.Rectangle(640,358,1282.7,724.7);
@@ -360,8 +486,8 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/game_treinamento_atlas_.png?1553045170285", id:"game_treinamento_atlas_"},
-		{src:"sounds/Walk_In_The_Park.mp3?1553045170331", id:"Walk_In_The_Park"}
+		{src:"images/game_treinamento_atlas_.png?1553052271934", id:"game_treinamento_atlas_"},
+		{src:"sounds/Walk_In_The_Park.mp3?1553052272687", id:"Walk_In_The_Park"}
 	],
 	preloads: []
 };
