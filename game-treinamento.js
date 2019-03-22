@@ -407,7 +407,7 @@ function getMCSymbolPrototype(symbol, nominalBounds, frameBounds) {
 	// timeline functions:
 	this.frame_0 = function() {
 		this.stop();
-		playSound("Walk_In_The_Park");
+		playSound("Walk_In_The_Park",-1);
 	}
 	this.frame_1 = function() {
 		this.stop();
@@ -536,16 +536,16 @@ p.nominalBounds = new cjs.Rectangle(-31,-40.2,637.4,160.5);
 		/*this.on('click', function(){
 		    this.play();
 		});*/
-		this.go_btn.on('click', function(){
+		this.go_btn.on(("click" || "touchstart"), function(){
 		    this.parent.play();
 		});
-		this.music_mc.on('click', function(){
+		this.music_mc.on(("click" || "touchstart"), function(){
 			this.play();
 		});
 	}
 	this.frame_9 = function() {
 		this.stop();
-		this.go_btn.on('click', function(){
+		this.go_btn.on(("click" || "touchstart"), function(){
 		    this.play();
 		});
 	}
@@ -769,10 +769,13 @@ p.nominalBounds = new cjs.Rectangle(-31,-40.2,637.4,160.5);
 			//var pt = stage.globalToLocal(target.x, target.y); //-----This line
 			var pt = stage.localToGlobal(drag.x, drag.y); //-----This line
 			
-			//console.log('this.target', this.target.x);
-			cond1 = pt.x<(140+50) && pt.x>(140-50);
-			cond2 = pt.y<(250+100) && pt.y>(250-160);
-			if (cond1 && cond2) {
+			console.log('pt.x', pt.x);
+			console.log('stage.width', stage.width);
+			
+			cond1 = pt.x<(stage.width*0,4);// && pt.x>(140-50);
+			//cond2 = pt.y<(stage.height);;; && pt.y>(250-160);
+			//if (cond1 && cond2) {
+			if (cond1) {
 				return true;
 			} else {
 				return false;
@@ -1102,8 +1105,8 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/game_treinamento_atlas_.png?1553147669941", id:"game_treinamento_atlas_"},
-		{src:"sounds/Walk_In_The_Park.mp3?1553147670080", id:"Walk_In_The_Park"}
+		{src:"images/game_treinamento_atlas_.png?1553223015392", id:"game_treinamento_atlas_"},
+		{src:"sounds/Walk_In_The_Park.mp3?1553223015469", id:"Walk_In_The_Park"}
 	],
 	preloads: []
 };
