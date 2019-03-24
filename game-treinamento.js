@@ -2,7 +2,7 @@
 
 var p; // shortcut to reference prototypes
 lib.ssMetadata = [
-		{name:"game_treinamento_atlas_", frames: [[3907,0,2105,2922],[7811,2824,327,119],[7509,560,494,481],[7509,2824,300,193],[8091,560,101,3],[5374,4631,925,536],[8005,560,84,64],[7509,3019,480,65],[5374,3014,480,65],[5374,2924,523,88],[0,4846,843,411],[883,4641,920,384],[3173,4244,715,591],[6668,3412,1180,1216],[6014,0,1493,3410],[0,0,1983,3420],[1985,0,1920,3428],[3907,2924,1465,3233],[1891,3430,1486,812],[0,3422,881,1422],[7509,1043,391,576],[7509,0,614,558],[6668,4630,1423,478],[7509,2021,418,414],[883,3422,1006,1217],[7509,2437,673,227],[7509,1621,563,398],[6301,5110,969,266],[1805,4897,969,267],[3173,4837,725,409],[5374,3412,1292,1217],[1891,4244,1280,651],[7509,2666,478,156]]}
+		{name:"game_treinamento_atlas_", frames: [[3907,0,2105,2922],[1401,7381,327,119],[3394,5187,494,481],[4774,6812,300,193],[3245,5780,101,3],[2677,4649,925,536],[3159,5780,84,64],[2677,5780,480,65],[1730,7381,480,65],[1401,7291,523,88],[2789,4202,843,411],[2789,3816,920,384],[2789,3430,920,384],[2677,5187,715,591],[1495,4649,1180,1216],[0,3422,1493,3410],[0,0,1983,3420],[1985,0,1920,3428],[3907,2924,1465,3233],[2378,5867,1486,812],[1495,5867,881,1422],[1008,6834,391,576],[5148,6159,614,558],[2378,6681,1423,478],[4368,7080,418,414],[0,6834,1006,1217],[2378,7161,673,227],[3803,7080,563,398],[3803,6812,969,266],[5148,6719,725,409],[1495,3430,1292,1217],[3866,6159,1280,651],[3394,5670,478,156]]}
 ];
 
 
@@ -94,119 +94,119 @@ lib.ssMetadata = [
 
 
 
-(lib.CalçaIntervel = function() {
+(lib.BotinaIntervel = function() {
 	this.spriteSheet = ss["game_treinamento_atlas_"];
 	this.gotoAndStop(12);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CamisetaIntervel = function() {
+(lib.CalçaIntervel = function() {
 	this.spriteSheet = ss["game_treinamento_atlas_"];
 	this.gotoAndStop(13);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CanelinhaIdle = function() {
+(lib.CamisetaIntervel = function() {
 	this.spriteSheet = ss["game_treinamento_atlas_"];
 	this.gotoAndStop(14);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CanelinhaObservando = function() {
+(lib.CanelinhaIdle = function() {
 	this.spriteSheet = ss["game_treinamento_atlas_"];
 	this.gotoAndStop(15);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CanelinhaOlá = function() {
+(lib.CanelinhaObservando = function() {
 	this.spriteSheet = ss["game_treinamento_atlas_"];
 	this.gotoAndStop(16);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CanelinhaSemVestes = function() {
+(lib.CanelinhaOlá = function() {
 	this.spriteSheet = ss["game_treinamento_atlas_"];
 	this.gotoAndStop(17);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CapaceteIntervel = function() {
+(lib.CanelinhaSemVestes = function() {
 	this.spriteSheet = ss["game_treinamento_atlas_"];
 	this.gotoAndStop(18);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CintodeSegurança = function() {
+(lib.CapaceteIntervel = function() {
 	this.spriteSheet = ss["game_treinamento_atlas_"];
 	this.gotoAndStop(19);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CrachádeIdentificação = function() {
+(lib.CintodeSegurança = function() {
 	this.spriteSheet = ss["game_treinamento_atlas_"];
 	this.gotoAndStop(20);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.Fone = function() {
+(lib.CrachádeIdentificação = function() {
 	this.spriteSheet = ss["game_treinamento_atlas_"];
 	this.gotoAndStop(21);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.LuvasdeVaqueta = function() {
+(lib.Fone = function() {
 	this.spriteSheet = ss["game_treinamento_atlas_"];
 	this.gotoAndStop(22);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.Patinho = function() {
+(lib.LuvasdeVaqueta = function() {
 	this.spriteSheet = ss["game_treinamento_atlas_"];
 	this.gotoAndStop(23);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.Regata = function() {
+(lib.Patinho = function() {
 	this.spriteSheet = ss["game_treinamento_atlas_"];
 	this.gotoAndStop(24);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.RoupaDobrada = function() {
+(lib.Regata = function() {
 	this.spriteSheet = ss["game_treinamento_atlas_"];
 	this.gotoAndStop(25);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.Sapato1 = function() {
+(lib.RoupaDobrada = function() {
 	this.spriteSheet = ss["game_treinamento_atlas_"];
 	this.gotoAndStop(26);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.Sapato4 = function() {
+(lib.Sapato1 = function() {
 	this.spriteSheet = ss["game_treinamento_atlas_"];
 	this.gotoAndStop(27);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.SapatoSocial = function() {
+(lib.Sapato4 = function() {
 	this.spriteSheet = ss["game_treinamento_atlas_"];
 	this.gotoAndStop(28);
 }).prototype = p = new cjs.Sprite();
@@ -257,30 +257,29 @@ function getMCSymbolPrototype(symbol, nominalBounds, frameBounds) {
 	}
 
 
-(lib.sapato2 = function(mode,startPosition,loop) {
+(lib.titulogame = function(mode,startPosition,loop) {
 	this.initialize(mode,startPosition,loop,{});
 
 	// Layer 1
-	this.instance = new lib.Sapato4();
+	this.instance = new lib.Bitmap49();
 	this.instance.parent = this;
-	this.instance.setTransform(0,0,0.178,0.178);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
 
-}).prototype = getMCSymbolPrototype(lib.sapato2, new cjs.Rectangle(0,0,172.6,47.4), null);
+}).prototype = getMCSymbolPrototype(lib.titulogame, new cjs.Rectangle(0,0,480,65), null);
 
 
 (lib.sapato1 = function(mode,startPosition,loop) {
 	this.initialize(mode,startPosition,loop,{});
 
 	// Layer 1
-	this.instance = new lib.SapatoSocial();
+	this.instance = new lib.BotinaIntervel();
 	this.instance.parent = this;
 	this.instance.setTransform(0,0,0.204,0.204);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
 
-}).prototype = getMCSymbolPrototype(lib.sapato1, new cjs.Rectangle(0,0,197.5,54.4), null);
+}).prototype = getMCSymbolPrototype(lib.sapato1, new cjs.Rectangle(0,0,187.5,78.3), null);
 
 
 (lib.patinho = function(mode,startPosition,loop) {
@@ -335,11 +334,11 @@ function getMCSymbolPrototype(symbol, nominalBounds, frameBounds) {
 	// Layer 1
 	this.instance = new lib.LuvasdeVaqueta();
 	this.instance.parent = this;
-	this.instance.setTransform(212.9,80.6,0.169,0.169,180);
+	this.instance.setTransform(212.9,0,0.169,0.168,0,0,180);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
 
-}).prototype = getMCSymbolPrototype(lib.luvas1, new cjs.Rectangle(-27,0,239.9,80.6), null);
+}).prototype = getMCSymbolPrototype(lib.luvas1, new cjs.Rectangle(-27,0,239.9,80.5), null);
 
 
 (lib.go_interno = function(mode,startPosition,loop) {
@@ -865,6 +864,27 @@ function getMCSymbolPrototype(symbol, nominalBounds, frameBounds) {
 }).prototype = getMCSymbolPrototype(lib.avisao, new cjs.Rectangle(0,0,925,536), null);
 
 
+(lib.sapato2 = function(mode,startPosition,loop) {
+	this.initialize(mode,startPosition,loop,{});
+
+	// Layer 1
+	this.instance = new lib.Sapato4();
+	this.instance.parent = this;
+	this.instance.setTransform(0,0,0.178,0.178);
+
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
+
+	// Layer 2
+	this.sapato1_mc = new lib.sapato1();
+	this.sapato1_mc.parent = this;
+	this.sapato1_mc.setTransform(79,23.6,0.866,0.866,0,0,0,99,27.2);
+	this.sapato1_mc.alpha = 0.012;
+
+	this.timeline.addTween(cjs.Tween.get(this.sapato1_mc).wait(1));
+
+}).prototype = getMCSymbolPrototype(lib.sapato2, new cjs.Rectangle(-6.8,0,179.4,67.8), null);
+
+
 (lib.xmc = function(mode,startPosition,loop) {
 	this.initialize(mode,startPosition,loop,{});
 
@@ -974,11 +994,19 @@ p.nominalBounds = new cjs.Rectangle(-2.5,-2.5,34.6,34.6);
 	// actions tween:
 	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(1).call(this.frame_1).wait(1));
 
-	// Layer 1
-	this.instance = new lib.Bitmap51();
+	// Layer 4
+	this.instance = new lib.go();
 	this.instance.parent = this;
+	this.instance.setTransform(263.3,167.3);
+	new cjs.ButtonHelper(this.instance, 0, 1, 1);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance).to({_off:true},1).wait(1));
+
+	// Layer 1
+	this.instance_1 = new lib.Bitmap51();
+	this.instance_1.parent = this;
+
+	this.timeline.addTween(cjs.Tween.get(this.instance_1).to({_off:true},1).wait(1));
 
 	// Layer 3
 	this.fechar_btn = new lib.fechar();
@@ -1000,7 +1028,7 @@ p.nominalBounds = new cjs.Rectangle(-2.5,-2.5,34.6,34.6);
 	this.timeline.addTween(cjs.Tween.get(this.shape_1).to({_off:true},1).wait(1));
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-31,-40.2,637.4,160.5);
+p.nominalBounds = new cjs.Rectangle(-31,-40.2,637.4,255.6);
 
 
 (lib.calca2 = function(mode,startPosition,loop) {
@@ -3755,7 +3783,7 @@ p.nominalBounds = new cjs.Rectangle(-31,-40.2,637.4,160.5);
 		this.capacete1_mc.oy = this.capacete1_mc.y;
 		this.capacete1_mc.fx = this.capacete_final_mc.x;
 		this.capacete1_mc.fy = this.capacete_final_mc.y;
-		this.capacete1_mc.cinto = true;
+		this.capacete1_mc.capacete = true;
 		this.capacete1_mc.certo = true;
 		
 		this.luvas1_mc.addEventListener(("pressmove" || "touchstart"), Drag.bind(this.luvas1_mc));
@@ -3764,7 +3792,7 @@ p.nominalBounds = new cjs.Rectangle(-31,-40.2,637.4,160.5);
 		this.luvas1_mc.oy = this.luvas1_mc.y;
 		this.luvas1_mc.fx = this.luvas_final_mc.x;
 		this.luvas1_mc.fy = this.luvas_final_mc.y;
-		this.luvas1_mc.cinto = true;
+		this.luvas1_mc.luvas = true;
 		this.luvas1_mc.certo = true;
 		
 		this.win = false;  
@@ -3843,6 +3871,12 @@ p.nominalBounds = new cjs.Rectangle(-31,-40.2,637.4,160.5);
 					//posOri2(evt.currentTarget);
 					evt.currentTarget.x = evt.currentTarget.fx;
 					evt.currentTarget.y = evt.currentTarget.fy;
+					if(evt.currentTarget.luvas)
+						stage.luvas_colocada = true;
+					else if(evt.currentTarget.cinto)
+						stage.cinto_colocada = true;
+					else if(evt.currentTarget.capacete)
+						stage.capacete_colocada = true;
 				}
 			} else {
 				if(evt.currentTarget.camiseta) {
@@ -3872,7 +3906,7 @@ p.nominalBounds = new cjs.Rectangle(-31,-40.2,637.4,160.5);
 			//console.log("checkWin(camiseta_colocada_certa)", stage.camiseta_colocada_certa);
 			//console.log("checkWin(calca_colocada_certa)", stage.calca_colocada_certa);
 			//console.log("checkWin(sapato_colocada_certa)", stage.sapato_colocada_certa);
-			if(stage.camiseta_colocada_certa && stage.calca_colocada_certa && stage.sapato_colocada_certa) {
+			if(stage.camiseta_colocada_certa && stage.calca_colocada_certa && stage.sapato_colocada_certa && stage.luvas_colocada && stage.cinto_colocada && stage.capacete_colocada) {
 				//console.log("WWWWWWWWWWWIIIIIIIIIIIIIN");
 				that.balao_ok_mc.visible=true;
 			} else {
@@ -3880,7 +3914,7 @@ p.nominalBounds = new cjs.Rectangle(-31,-40.2,637.4,160.5);
 				that.balao_ops_mc.visible=true;
 				//that.camiseta1_mc.x = that.camiseta1_mc.ox;
 				//that.camiseta1_mc.y = that.camiseta1_mc.oy;
-				stage.sapato_colocada = stage.camiseta_colocada = stage.calca_colocada = false;
+				luvas_colocada = cinto_colocada = capacete_colocada = stage.sapato_colocada = stage.camiseta_colocada = stage.calca_colocada = false;
 				posOri2(that.camiseta1_mc);
 				posOri2(that.camiseta2_mc);
 				posOri2(that.camiseta3_mc);
@@ -4150,17 +4184,18 @@ p.nominalBounds = new cjs.Rectangle(-31,-40.2,637.4,160.5);
 	this.instance_1.parent = this;
 	this.instance_1.setTransform(58,53);
 
+	this.instance_2 = new lib.titulogame();
+	this.instance_2.parent = this;
+	this.instance_2.setTransform(307,55.5,1,1,0,0,0,240,32.5);
+	this.instance_2.shadow = new cjs.Shadow("rgba(255,255,255,1)",0,0,11);
+
 	this.text = new cjs.Text("", "12px 'TimesNewRomanPSMT'", "#999999");
 	this.text.lineHeight = 15;
 	this.text.lineWidth = 100;
 	this.text.parent = this;
 	this.text.setTransform(356.1,49.2);
 
-	this.instance_2 = new lib.Bitmap49();
-	this.instance_2.parent = this;
-	this.instance_2.setTransform(67,23);
-
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.instance_1}]},9).to({state:[{t:this.instance_2},{t:this.text}]},5).to({state:[]},2).to({state:[]},2).wait(1));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.instance_1}]},9).to({state:[{t:this.text},{t:this.instance_2}]},5).to({state:[]},2).to({state:[]},2).wait(1));
 
 	// balao
 	this.go_btn = new lib.go();
@@ -4231,7 +4266,7 @@ p.nominalBounds = new cjs.Rectangle(-31,-40.2,637.4,160.5);
 
 	this.luvas_final_mc = new lib.luvas1();
 	this.luvas_final_mc.parent = this;
-	this.luvas_final_mc.setTransform(239.4,531.9,0.665,0.491,0,0,0,64.2,61.1);
+	this.luvas_final_mc.setTransform(236.6,527.2,0.735,0.543,0,0,0,64.3,61.2);
 	this.luvas_final_mc.alpha = 0.012;
 
 	this.capacete_final_mc = new lib.capacete();
@@ -4250,12 +4285,12 @@ p.nominalBounds = new cjs.Rectangle(-31,-40.2,637.4,160.5);
 
 	this.sapato_final_mc = new lib.sapato1();
 	this.sapato_final_mc.parent = this;
-	this.sapato_final_mc.setTransform(260.1,623,0.697,0.697,0,0,0,99,27.3);
-	this.sapato_final_mc.alpha = 0.012;
+	this.sapato_final_mc.setTransform(262.6,606.6,0.697,0.697,0,0,0,99,27.3);
+	this.sapato_final_mc.alpha = 0;
 
 	this.calca_final_mc = new lib.calca1();
 	this.calca_final_mc.parent = this;
-	this.calca_final_mc.setTransform(259.3,566.9,0.617,0.617,0,0,0,76.3,63);
+	this.calca_final_mc.setTransform(259.3,565.3,0.617,0.617,0,0,0,76.3,63);
 	this.calca_final_mc.alpha = 0.039;
 
 	this.camiseta_final_mc = new lib.camiseta1();
@@ -4265,15 +4300,15 @@ p.nominalBounds = new cjs.Rectangle(-31,-40.2,637.4,160.5);
 
 	this.sapato2_mc = new lib.sapato2();
 	this.sapato2_mc.parent = this;
-	this.sapato2_mc.setTransform(1134.5,607.6,0.791,0.791,0,0,0,86.4,23.7);
+	this.sapato2_mc.setTransform(1144.2,602.1,0.791,0.791,0,0,0,86.4,23.7);
 
 	this.sapato1_mc = new lib.sapato1();
 	this.sapato1_mc.parent = this;
-	this.sapato1_mc.setTransform(975.8,607.9,0.697,0.697,0,0,0,99,27.3);
+	this.sapato1_mc.setTransform(985.6,602.1,0.697,0.697,0,0,0,99,27.3);
 
 	this.luvas1_mc = new lib.luvas1();
 	this.luvas1_mc.parent = this;
-	this.luvas1_mc.setTransform(749.9,631.1,0.665,0.491,0,0,0,64.2,61.1);
+	this.luvas1_mc.setTransform(734.5,628.1,0.687,0.462,0,0,0,64.5,61.3);
 
 	this.capacete1_mc = new lib.capacete();
 	this.capacete1_mc.parent = this;
@@ -4281,7 +4316,7 @@ p.nominalBounds = new cjs.Rectangle(-31,-40.2,637.4,160.5);
 
 	this.camiseta3_mc = new lib.camiseta3();
 	this.camiseta3_mc.parent = this;
-	this.camiseta3_mc.setTransform(656.9,365.6,1.12,1.12,0,0,0,59.1,71.5);
+	this.camiseta3_mc.setTransform(662.8,373.8,1.156,1.156,0,0,0,59.1,71.5);
 
 	this.camiseta1_mc = new lib.camiseta1();
 	this.camiseta1_mc.parent = this;
@@ -4384,8 +4419,8 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/game_treinamento_atlas_.png?1553357400118", id:"game_treinamento_atlas_"},
-		{src:"sounds/Walk_In_The_Park.mp3?1553357400976", id:"Walk_In_The_Park"}
+		{src:"images/game_treinamento_atlas_.png?1553399963273", id:"game_treinamento_atlas_"},
+		{src:"sounds/Walk_In_The_Park.mp3?1553399963936", id:"Walk_In_The_Park"}
 	],
 	preloads: []
 };
